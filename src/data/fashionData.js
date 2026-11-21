@@ -18,9 +18,6 @@ export const BUSINESS_INFO = {
   googleShareUrl: "https://share.google/ZDVSG76KAI22VjMt3",
   instagramUrl: "https://www.instagram.com/agarwalhosierysilvassa?dmpr=eHRkZHNtM2ZqZW8z",
   instagramHandle: "@agarwalhosierysilvassa",
-  featuredReelUrl: "https://www.instagram.com/reel/DIQWrS4il3M/?lqvp=ZDAycnExanFucjFo",
-  featuredReelEmbedUrl: "https://www.instagram.com/reel/DIQWrS4il3M/embed",
-  featuredReelId: "DIQWrS4il3M",
   mapsEmbedUrl: "https://maps.google.com/maps?q=Shop+No.+05,+Rajshree+Tower,+Silvassa+Ring+Road,+near+Ekdant+Square+Sky+Heights,+Yogi+Vihar,+Silvassa+396230&t=&z=15&ie=UTF8&iwloc=&output=embed",
   whatsappUrl: "https://wa.me/917600903749?text=Hello%20Agarwal%20Hosiery%20Silvassa,%20I%20would%20like%20to%20enquire%20about%20your%20clothing%20and%20hosiery%20collections."
 };
