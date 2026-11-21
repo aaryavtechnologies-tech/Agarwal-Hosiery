@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles, ShoppingBag, Compass, MapPin } from 'lucide-react
 import Hero from '../components/Hero';
 import Categories from '../components/Categories';
 import FestiveCollection from '../components/FestiveCollection';
+import InstagramReelSection from '../components/InstagramReelSection';
 import Lookbook from '../components/Lookbook';
 import Wholesale from '../components/Wholesale';
 import VisitUs from '../components/VisitUs';
@@ -63,7 +64,10 @@ export default function HomePage() {
       {/* 4. Ladies' Ethnic & Festive Edit */}
       <FestiveCollection />
 
-      {/* 5. Featured Lookbook: The Everyday Edit */}
+      {/* 5. Official Instagram Video Reel Spotlight */}
+      <InstagramReelSection />
+
+      {/* 6. Featured Lookbook: The Everyday Edit */}
       <Lookbook
         activeFilter={activeLookbookFilter}
         setActiveFilter={setActiveLookbookFilter}

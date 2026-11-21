@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Eye, Sparkles, Filter, X, Phone, MessageSquare } from 'lucide-react';
+import { Eye, Sparkles, Filter, X, Phone, MessageSquare, ArrowUpRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/fashionData';
 
 export default function GalleryPage() {
@@ -509,6 +509,52 @@ export default function GalleryPage() {
               </button>
             );
           })}
+        </div>
+      </div>
+
+      {/* Featured Instagram Reel Spotlight in Gallery */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <div className="bg-[#151515] text-[#F8F6F2] p-6 sm:p-8 border border-black/10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-[#C6A576]/15 flex items-center justify-center text-[#C6A576] flex-shrink-0">
+              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </div>
+            <div>
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#C6A576] font-semibold block mb-1">
+                Official Instagram Reel Spotlight
+              </span>
+              <h3 className="font-editorial text-xl sm:text-2xl text-white">
+                Agarwal Hosiery Silvassa in Motion
+              </h3>
+              <p className="text-xs text-[#EAE7E2]/70 font-light mt-0.5">
+                Watch the latest video reel featuring our store collection and festive showcase on Instagram.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 w-full md:w-auto">
+            <a
+              href={BUSINESS_INFO.featuredReelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 py-3 px-6 bg-[#C6A576] hover:bg-[#D5B687] text-[#151515] text-xs font-bold uppercase tracking-[0.18em] transition-all"
+            >
+              <span>Watch Video Reel</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+            <a
+              href={BUSINESS_INFO.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 py-3 px-5 bg-white/10 hover:bg-white/20 text-white text-xs font-semibold uppercase tracking-wider transition-colors border border-white/15"
+            >
+              <span>Follow Us</span>
+            </a>
+          </div>
         </div>
       </div>
 
