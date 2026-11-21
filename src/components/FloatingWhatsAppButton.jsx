@@ -6,7 +6,7 @@ export default function FloatingWhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(true);
 
   return (
-    <div className="fixed bottom-24 sm:bottom-8 right-5 sm:right-8 z-50 flex items-center group">
+    <div className="fixed bottom-6 sm:bottom-8 right-5 sm:right-8 z-50 flex items-center group">
       {/* Tooltip / Prompt bubble */}
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-2 mr-3 px-3.5 py-2 bg-[#151515] text-[#F8F6F2] text-xs rounded-full shadow-xl border border-white/10 animate-fade-in">
