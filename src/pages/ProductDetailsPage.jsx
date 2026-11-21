@@ -32,6 +32,11 @@ export default function ProductDetailsPage() {
   const [addedNotice, setAddedNotice] = useState(false);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
+  const discountPercent =
+    product.originalPrice && product.price
+      ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+      : null;
+
   const currentImage = (product.images && (product.images[activeImageIndex] || product.images[0])) || '';
 
   const handleAddToCart = () => {
@@ -130,14 +135,21 @@ export default function ProductDetailsPage() {
                   {product.name}
                 </h1>
 
-                {/* Inquiry & Availability Badge */}
-                <div className="mt-3 flex items-center gap-2.5">
-                  <span className="inline-flex items-center px-3 py-1 bg-[#F5F2EB] text-[#C6A576] text-xs font-bold uppercase tracking-wider border border-[#C6A576]/30">
-                    Price on Inquiry
+                {/* Price Display */}
+                <div className="mt-4 flex items-baseline gap-3">
+                  <span className="text-2xl sm:text-3xl font-bold text-[#151515]">
+                    ₹{product.price.toLocaleString('en-IN')}
                   </span>
-                  <span className="text-xs text-[#151515]/60 uppercase tracking-wider">
-                    Retail & Bulk Rates
-                  </span>
+                  {product.originalPrice && (
+                    <span className="text-base text-[#151515]/40 line-through">
+                      ₹{product.originalPrice.toLocaleString('en-IN')}
+                    </span>
+                  )}
+                  {discountPercent && (
+                    <span className="px-2.5 py-0.5 bg-[#C6A576]/20 text-[#151515] text-xs font-bold uppercase tracking-wider border border-[#C6A576]/40">
+                      Save {discountPercent}%
+                    </span>
+                  )}
                 </div>
               </div>
 

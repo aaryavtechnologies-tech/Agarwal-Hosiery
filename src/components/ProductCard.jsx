@@ -17,6 +17,11 @@ export default function ProductCard({ product }) {
     setTimeout(() => setAddedNotice(false), 1800);
   };
 
+  const discountPercent =
+    product.originalPrice && product.price
+      ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+      : null;
+
   // Fixed single product image - never changes when cursor moves over it
   const displayImage = (product.images && product.images[0]) || '';
 
@@ -46,6 +51,15 @@ export default function ProductCard({ product }) {
           </div>
         )}
 
+        {/* Discount Tag */}
+        {discountPercent && (
+          <div className="absolute top-3 right-3 z-10">
+            <span className="px-2 py-0.5 bg-[#C6A576] text-[#151515] text-[10px] font-bold uppercase tracking-wider shadow-sm">
+              {discountPercent}% OFF
+            </span>
+          </div>
+        )}
+
         {/* Hover Quick Action Overlay */}
         <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2 p-4">
           <span className="p-2.5 bg-white/90 hover:bg-[#C6A576] hover:text-[#151515] text-[#151515] rounded-full shadow-lg transition-transform transform translate-y-2 group-hover:translate-y-0 duration-300">
@@ -71,14 +85,16 @@ export default function ProductCard({ product }) {
             {product.name}
           </Link>
 
-          {/* Status Row */}
-          <div className="mt-2.5 flex items-center justify-between text-xs">
-            <span className="text-[11px] font-medium text-[#C6A576] tracking-wider uppercase">
-              {product.clothingTypeLabel || 'Inquire For Rates'}
+          {/* Price Row */}
+          <div className="mt-2 flex items-baseline gap-2">
+            <span className="text-sm sm:text-base font-bold text-[#151515]">
+              ₹{product.price.toLocaleString('en-IN')}
             </span>
-            <span className="text-[10px] text-emerald-700 font-semibold tracking-wider uppercase">
-              In Stock
-            </span>
+            {product.originalPrice && (
+              <span className="text-xs text-[#151515]/40 line-through">
+                ₹{product.originalPrice.toLocaleString('en-IN')}
+              </span>
+            )}
           </div>
         </div>
 

@@ -13,7 +13,11 @@ export const BUSINESS_INFO = {
     state: "Dadra and Nagar Haveli and Daman and Diu – 396230, India",
     full: "Shop No. 05, Rajshree Tower, Silvassa Ring Road, near Ekdant Square Sky Heights, Yogi Vihar, Silvassa, Dadra and Nagar Haveli and Daman and Diu – 396230, India"
   },
-  mapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=Agarwal+Hosiery+Shop+No+05+Rajshree+Tower+Silvassa+Ring+Road+Silvassa+396230",
+  mapsSearchUrl: "https://share.google/ZDVSG76KAI22VjMt3",
+  googleMapsUrl: "https://share.google/ZDVSG76KAI22VjMt3",
+  googleShareUrl: "https://share.google/ZDVSG76KAI22VjMt3",
+  instagramUrl: "https://www.instagram.com/agarwalhosierysilvassa?dmpr=eHRkZHNtM2ZqZW8z",
+  instagramHandle: "@agarwalhosierysilvassa",
   mapsEmbedUrl: "https://maps.google.com/maps?q=Shop+No.+05,+Rajshree+Tower,+Silvassa+Ring+Road,+near+Ekdant+Square+Sky+Heights,+Yogi+Vihar,+Silvassa+396230&t=&z=15&ie=UTF8&iwloc=&output=embed",
   whatsappUrl: "https://wa.me/917600903749?text=Hello%20Agarwal%20Hosiery%20Silvassa,%20I%20would%20like%20to%20enquire%20about%20your%20clothing%20and%20hosiery%20collections."
 };

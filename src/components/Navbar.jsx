@@ -307,6 +307,22 @@ export default function Navbar() {
 
             {/* Right: Search, Cart, Call Now */}
             <div className="flex items-center space-x-3 sm:space-x-4">
+              {/* Instagram Profile */}
+              <a
+                href={BUSINESS_INFO.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-[#F8F6F2]/80 hover:text-[#C6A576] transition-colors focus:outline-none"
+                aria-label="Agarwal Hosiery Instagram"
+                title="Follow us on Instagram"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+
               {/* Product Search Trigger */}
               <button
                 onClick={() => setSearchModalOpen(true)}
@@ -497,7 +513,7 @@ export default function Navbar() {
         </div>
 
         {/* Bottom CTA in Mobile Drawer */}
-        <div className="space-y-4 pt-6 border-t border-white/10">
+        <div className="space-y-3 pt-6 border-t border-white/10">
           <div className="grid grid-cols-2 gap-3">
             <a
               href={`tel:${BUSINESS_INFO.phoneRaw}`}
@@ -515,6 +531,20 @@ export default function Navbar() {
               <span>Bag ({totalItems})</span>
             </Link>
           </div>
+
+          <a
+            href={BUSINESS_INFO.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 py-2.5 px-4 bg-white/5 hover:bg-white/10 text-[#C6A576] text-xs font-semibold uppercase tracking-wider border border-[#C6A576]/30"
+          >
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            <span>Instagram {BUSINESS_INFO.instagramHandle}</span>
+          </a>
         </div>
       </div>
 

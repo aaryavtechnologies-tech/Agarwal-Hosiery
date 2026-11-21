@@ -132,16 +132,32 @@ export default function Footer() {
                 WhatsApp Desk →
               </a>
             </div>
-            <div className="pt-1">
+            <div className="pt-2 space-y-2">
               <a
-                href={BUSINESS_INFO.mapsSearchUrl}
+                href={BUSINESS_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-[#EAE7E2]/60 hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-xs text-[#EAE7E2]/70 hover:text-[#C6A576] transition-colors"
               >
-                <Navigation className="w-3.5 h-3.5 text-[#C6A576]" />
-                <span>Google Maps Directions</span>
+                <svg className="w-3.5 h-3.5 text-[#C6A576]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+                <span>Instagram: {BUSINESS_INFO.instagramHandle}</span>
               </a>
+
+              <div>
+                <a
+                  href={BUSINESS_INFO.mapsSearchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#EAE7E2]/70 hover:text-white transition-colors"
+                >
+                  <Navigation className="w-3.5 h-3.5 text-[#C6A576]" />
+                  <span>Google Profile & Directions</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

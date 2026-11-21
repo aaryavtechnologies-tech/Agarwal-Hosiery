@@ -21,10 +21,16 @@ export default function ShopPage() {
   const typeParam = searchParams.get('type') || '';
   const sizeParam = searchParams.get('size') || '';
   const colorParam = searchParams.get('color') || '';
+  const minPriceParam = Number(searchParams.get('minPrice')) || 0;
+  const maxPriceParam = Number(searchParams.get('maxPrice')) || 10000;
   const sortParam = searchParams.get('sort') || 'featured';
 
   // Mobile & Desktop Filter Panel state
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
+
+  // Price range constants
+  const ABSOLUTE_MIN_PRICE = 0;
+  const ABSOLUTE_MAX_PRICE = 10000;
 
   // Available unique filter values from product data
   const availableCategories = [
@@ -85,7 +91,9 @@ export default function ShopPage() {
   const activeFiltersCount = [
     categoryParam,
     typeParam,
-    sizeParam
+    sizeParam,
+    minPriceParam > ABSOLUTE_MIN_PRICE ? minPriceParam : null,
+    maxPriceParam < ABSOLUTE_MAX_PRICE ? maxPriceParam : null
   ].filter(Boolean).length;
 
   // Filtered and Sorted products
@@ -119,9 +127,17 @@ export default function ShopPage() {
         return false;
       }
 
+      // 5. Price filter
+      const price = product.price || 0;
+      if (price < minPriceParam || price > maxPriceParam) {
+        return false;
+      }
+
       return true;
     }).sort((a, b) => {
       if (sortParam === 'newest') return b.id.localeCompare(a.id);
+      if (sortParam === 'price-asc') return (a.price || 0) - (b.price || 0);
+      if (sortParam === 'price-desc') return (b.price || 0) - (a.price || 0);
       if (sortParam === 'name-asc') return a.name.localeCompare(b.name);
       // 'featured' default:
       return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
@@ -132,6 +148,8 @@ export default function ShopPage() {
     typeParam,
     sizeParam,
     colorParam,
+    minPriceParam,
+    maxPriceParam,
     sortParam
   ]);
 
@@ -219,6 +237,8 @@ export default function ShopPage() {
             >
               <option value="featured">Featured First</option>
               <option value="newest">Newest Arrivals</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
               <option value="name-asc">Name: A to Z</option>
             </select>
           </div>
@@ -353,6 +373,32 @@ export default function ShopPage() {
                           </button>
                         );
                       })}
+                    </div>
+                  </div>
+
+                  {/* Price Range */}
+                  <div className="pt-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="text-xs uppercase tracking-[0.2em] text-[#C6A576] font-semibold">
+                        Maximum Price
+                      </h4>
+                      <span className="text-xs font-bold text-white">
+                        ₹{maxPriceParam.toLocaleString('en-IN')}
+                      </span>
+                    </div>
+                    <input
+                      type="range"
+                      min={ABSOLUTE_MIN_PRICE}
+                      max={ABSOLUTE_MAX_PRICE}
+                      step={250}
+                      value={maxPriceParam}
+                      onChange={(e) => updateFilter('maxPrice', e.target.value)}
+                      className="w-full accent-[#C6A576] cursor-pointer"
+                    />
+                    <div className="flex items-center justify-between text-[10px] text-white/40 mt-1">
+                      <span>₹0</span>
+                      <span>₹5,000</span>
+                      <span>₹10,000</span>
                     </div>
                   </div>
                 </div>
