@@ -147,9 +147,6 @@ export default function SearchModal({ isOpen, onClose }) {
                       <h4 className="text-sm font-medium text-white group-hover:text-[#C6A576] transition-colors truncate">
                         {product.name}
                       </h4>
-                      <p className="text-xs text-[#C6A576] font-semibold mt-0.5">
-                        ₹{product.price.toLocaleString('en-IN')}
-                      </p>
                     </div>
 
                     <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-[#C6A576] group-hover:translate-x-1 transition-all" />

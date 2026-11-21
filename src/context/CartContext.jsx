@@ -73,11 +73,6 @@ export function CartProvider({ children }) {
 
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
-  const subtotal = cart.reduce(
-    (total, item) => total + (item.product.price || 0) * item.quantity,
-    0
-  );
-
   const generateWhatsAppOrderUrl = () => {
     if (cart.length === 0) return BUSINESS_INFO.whatsappUrl;
 
@@ -86,13 +81,11 @@ export function CartProvider({ children }) {
     cart.forEach((item, index) => {
       text += `${index + 1}. *${item.product.name}*\n`;
       text += `   • Size: ${item.size} | Color: ${item.color}\n`;
-      text += `   • Qty: ${item.quantity} × ₹${item.product.price} = ₹${
-        item.product.price * item.quantity
-      }\n`;
+      text += `   • Quantity: ${item.quantity}\n`;
     });
     text += `--------------------------------------\n`;
-    text += `*Estimated Subtotal:* ₹${subtotal.toLocaleString('en-IN')}\n\n`;
-    text += `Please confirm availability for in-store pickup or order confirmation at Rajshree Tower, Silvassa Ring Road.`;
+    text += `*Total Items:* ${totalItems}\n\n`;
+    text += `Please share current rates, wholesale/retail pricing, and stock availability for order confirmation at Rajshree Tower, Silvassa Ring Road.`;
 
     return `https://wa.me/917600903749?text=${encodeURIComponent(text)}`;
   };
@@ -106,7 +99,6 @@ export function CartProvider({ children }) {
         updateQuantity,
         clearCart,
         totalItems,
-        subtotal,
         isCartOpen,
         setIsCartOpen,
         generateWhatsAppOrderUrl

@@ -11,7 +11,6 @@ export default function CartDrawer() {
     setIsCartOpen,
     updateQuantity,
     removeFromCart,
-    subtotal,
     totalItems,
     generateWhatsAppOrderUrl
   } = useCart();
@@ -99,10 +98,6 @@ export default function CartDrawer() {
                         <span>Color: <strong className="text-white">{item.color}</strong></span>
                       </div>
 
-                      <div className="text-xs font-semibold text-[#C6A576] pt-1">
-                        ₹{(item.product.price || 0).toLocaleString('en-IN')}
-                      </div>
-
                       {/* Quantity Stepper & Remove */}
                       <div className="flex items-center justify-between pt-2">
                         <div className="flex items-center border border-white/20">
@@ -138,25 +133,23 @@ export default function CartDrawer() {
             )}
           </div>
 
-          {/* Footer Subtotal & Action */}
+          {/* Footer Inquiry & Action */}
           {cart.length > 0 && (
             <div className="p-6 border-t border-white/10 bg-[#141414] space-y-4">
               <div className="space-y-1.5 text-sm">
                 <div className="flex items-center justify-between text-[#EAE7E2]/70 text-xs">
-                  <span>Subtotal</span>
+                  <span>Selected Products</span>
                   <span className="font-semibold text-white">
-                    ₹{subtotal.toLocaleString('en-IN')}
+                    {totalItems} {totalItems === 1 ? 'item' : 'items'}
                   </span>
                 </div>
                 <div className="flex items-center justify-between text-xs text-[#EAE7E2]/50">
-                  <span>Order Fulfillment</span>
-                  <span className="text-[#C6A576]">In-Store Pickup / Local Delivery</span>
+                  <span>Pricing & Rates</span>
+                  <span className="text-[#C6A576]">Available on Inquiry</span>
                 </div>
-                <div className="flex items-center justify-between pt-2 border-t border-white/10 text-base font-medium">
-                  <span className="font-editorial text-lg text-[#F8F6F2]">Estimated Total</span>
-                  <span className="font-bold text-[#C6A576]">
-                    ₹{subtotal.toLocaleString('en-IN')}
-                  </span>
+                <div className="flex items-center justify-between text-xs text-[#EAE7E2]/50">
+                  <span>Order Fulfillment</span>
+                  <span className="text-white">In-Store Pickup / Local Delivery</span>
                 </div>
               </div>
 
@@ -168,7 +161,7 @@ export default function CartDrawer() {
                   className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-[#C6A576] hover:bg-[#D5B687] text-[#151515] text-xs font-bold uppercase tracking-[0.2em] transition-colors shadow-lg shadow-[#C6A576]/20"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>Enquire Order via WhatsApp</span>
+                  <span>Send WhatsApp Inquiry</span>
                 </a>
 
                 <div className="grid grid-cols-2 gap-2">

@@ -21,7 +21,6 @@ export default function CartPage() {
     updateQuantity,
     removeFromCart,
     clearCart,
-    subtotal,
     totalItems,
     generateWhatsAppOrderUrl
   } = useCart();
@@ -110,9 +109,6 @@ export default function CartPage() {
                       <span>•</span>
                       <span>Color: <strong>{item.color}</strong></span>
                     </div>
-                    <p className="text-sm font-semibold text-[#151515] pt-1">
-                      ₹{(item.product.price || 0).toLocaleString('en-IN')}
-                    </p>
                   </div>
                 </div>
 
@@ -136,11 +132,6 @@ export default function CartPage() {
                     </button>
                   </div>
 
-                  {/* Line Total */}
-                  <div className="text-sm font-bold text-[#151515] min-w-20 text-right">
-                    ₹{((item.product.price || 0) * item.quantity).toLocaleString('en-IN')}
-                  </div>
-
                   {/* Remove Button */}
                   <button
                     onClick={() => removeFromCart(item.id)}
@@ -157,29 +148,26 @@ export default function CartPage() {
           {/* Order Summary & Enquiry Checkout */}
           <div className="lg:col-span-4 bg-[#151515] text-[#F8F6F2] p-8 shadow-xl border border-black/10 space-y-6">
             <h2 className="font-editorial text-2xl uppercase tracking-wider text-white pb-4 border-b border-white/10">
-              Order Summary
+              Order Inquiry
             </h2>
 
             <div className="space-y-3 text-xs text-[#EAE7E2]/80">
               <div className="flex items-center justify-between">
-                <span>Subtotal ({totalItems} items)</span>
-                <span className="font-semibold text-white">₹{subtotal.toLocaleString('en-IN')}</span>
+                <span>Selected Items</span>
+                <span className="font-semibold text-white">{totalItems} items</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Pricing & Rates</span>
+                <span className="text-[#C6A576]">Available on Inquiry</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>Order Type</span>
-                <span className="text-[#C6A576]">Direct Store Inquiry</span>
+                <span className="text-white">Retail & Wholesale Supply</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>Fulfilment</span>
-                <span>Rajshree Tower Pickup / Silvassa Supply</span>
+                <span>Rajshree Tower Pickup / Silvassa Delivery</span>
               </div>
-            </div>
-
-            <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-              <span className="font-editorial text-xl text-white">Estimated Total</span>
-              <span className="text-2xl font-bold text-[#C6A576]">
-                ₹{subtotal.toLocaleString('en-IN')}
-              </span>
             </div>
 
             {/* Direct WhatsApp Order Submission */}
