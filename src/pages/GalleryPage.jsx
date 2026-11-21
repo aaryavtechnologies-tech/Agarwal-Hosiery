@@ -456,6 +456,42 @@ export default function GalleryPage() {
       image: '/images/hosiery/embroidered-waffle-knit-handkerchiefs-12pack.jpg',
       aspect: 'col-span-1 md:col-span-4 row-span-2',
       caption: '12-piece family pack of waffle-textured cotton pocket squares with corner floral embroidery and edge trim.'
+    },
+    {
+      id: 56,
+      title: "Olive Green Mandala Medallion Kurta, Palazzo & Dupatta Set",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/olive-green-mandala-kurta-pant-dupatta-set.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Olive moss-green cotton straight kurti with central mandala medallions, tassel dori neckline, palazzo, and ivory dupatta.'
+    },
+    {
+      id: 57,
+      title: "Dusty Rose Pintuck Pleated Cotton Flared Midi Dress",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/dusty-rose-pintuck-pleated-midi-dress.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Charming dusty rose-pink flared cotton midi dress with vertical pintuck pleated bodice and ivory palm frond block prints.'
+    },
+    {
+      id: 58,
+      title: "White & Pink Floral Pintuck Pleated Cotton Anarkali Dress",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/white-pink-floral-pintuck-flared-midi-dress.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Breezy off-white pure cotton dress sprinkled with vibrant fuchsia pink floral bootis and chest pintuck pleats.'
+    },
+    {
+      id: 59,
+      title: "Terracotta Rust Mandala Print Kurta, Palazzo & Dupatta Set",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/rust-orange-mandala-kurta-palazzo-set.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Warm terracotta rust-orange straight cotton kurti with mandala block print motifs, matching palazzo trousers, and ivory border dupatta.'
     }
   ];
 

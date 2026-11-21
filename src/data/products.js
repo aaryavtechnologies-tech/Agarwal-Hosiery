@@ -511,6 +511,122 @@ export const PRODUCTS = [
     ]
   },
   {
+    id: 'prod-w-22',
+    name: 'Olive Green Mandala Medallion Kurta, Palazzo & Dupatta Set',
+    slug: 'olive-green-mandala-medallion-kurta-palazzo-dupatta-set',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurta-sets',
+    clothingTypeLabel: 'Kurta Palazzo Set',
+    targetGender: 'women',
+    price: 2499,
+    originalPrice: 3599,
+    badge: 'NEW ARRIVAL',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/womens-collection/olive-green-mandala-kurta-pant-dupatta-set.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Elegant olive moss-green straight cotton kurti styled with vertical multi-color mandala circular medallions down the front placket, matching wide-leg palazzo pants, and an ivory contrast printed dupatta.',
+    fabric: '100% Breathable Combed Slub Cotton with Block Print Accents',
+    details: [
+      'Vertical center mandala medallion motifs in rust, ochre, teal, and cream',
+      'Artisan handcrafted tassel dori ties at the round neckline',
+      'Wide-leg matching solid palazzo pants with elasticated waistband',
+      'Contrast ivory dupatta with intricate coordinated block printed borders',
+      'Gentle hand wash or machine wash cold'
+    ]
+  },
+  {
+    id: 'prod-w-23',
+    name: 'Dusty Rose Pintuck Pleated Cotton Flared Midi Dress',
+    slug: 'dusty-rose-pintuck-pleated-cotton-flared-midi-dress',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'dresses',
+    clothingTypeLabel: 'Flared Midi Dress',
+    targetGender: 'women',
+    price: 1899,
+    originalPrice: 2699,
+    badge: 'ELEGANT EDIT',
+    isFeatured: true,
+    rating: 4.8,
+    inStock: true,
+    images: [
+      '/images/womens-collection/dusty-rose-pintuck-pleated-midi-dress.jpg'
+    ],
+    sizes: ['S (Bust 36)', 'M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)'],
+    description: 'Charming dusty rose-pink flared cotton midi dress with vertical pintuck pleated bodice, wooden buttons, and delicate ivory botanical palm frond block prints. Features graceful 3/4 sleeves and a flattering tiered flare.',
+    fabric: '100% Super-Soft Cambric Cotton',
+    details: [
+      'Delicate hand-pintucked bodice creating graceful natural flare',
+      'Wooden button-down front accent with round neck',
+      'All-over white palm frond feather block print motifs',
+      'Breathable, ultra-comfortable silhouette for daily and festive wear',
+      'Machine wash gentle cycle'
+    ]
+  },
+  {
+    id: 'prod-w-24',
+    name: 'White & Pink Floral Pintuck Pleated Cotton Anarkali Dress',
+    slug: 'white-pink-floral-pintuck-pleated-cotton-anarkali-dress',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'dresses',
+    clothingTypeLabel: 'Floral Midi Dress',
+    targetGender: 'women',
+    price: 1999,
+    originalPrice: 2799,
+    badge: 'BESTSELLER',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/womens-collection/white-pink-floral-pintuck-flared-midi-dress.jpg'
+    ],
+    sizes: ['S (Bust 36)', 'M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)'],
+    description: 'Breezy pristine off-white pure cotton flared dress adorned with vibrant fuchsia pink floral bootis, delicate vertical chest pintuck pleats, and wooden button details. Perfect for festive daytime outings and casual celebrations.',
+    fabric: '100% Fine Mulmul Cotton with Soft Lining',
+    details: [
+      'Vertical pintuck pleating along the chest yoke providing fluid drape',
+      'Crisp floral botanical bootis in vibrant fuchsia and rose pink',
+      '3/4 length sleeves with matching printed borders',
+      'Calf-length flared hemline with side seam pockets',
+      'Gentle hand wash recommended'
+    ]
+  },
+  {
+    id: 'prod-w-25',
+    name: 'Terracotta Rust Mandala Print Kurta, Palazzo & Dupatta Set',
+    slug: 'terracotta-rust-mandala-print-kurta-palazzo-dupatta-set',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurta-sets',
+    clothingTypeLabel: 'Kurta Palazzo Set',
+    targetGender: 'women',
+    price: 2499,
+    originalPrice: 3599,
+    badge: 'STORE FAVORITE',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/womens-collection/rust-orange-mandala-kurta-palazzo-set.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Warm terracotta rust-orange straight cotton kurti accented with traditional mandala block print motifs, artisan tassel dori ties, straight palazzo trousers, and a dual-tone ivory border dupatta.',
+    fabric: '100% Combed Slub Cotton with Hand Block Prints',
+    details: [
+      'Eye-catching central column of concentric mandala medallions',
+      'Artisan crafted tassel dori hanging accents on neckline',
+      'Coordinated solid terracotta palazzo pants with comfort elastic waist',
+      'Ivory contrast dupatta with geometric and floral border bands',
+      'Colorfast reactive dyes; hand wash cold'
+    ]
+  },
+  {
     id: 'prod-m-05',
     name: 'Van Heusen Mustard, White & Navy Color-Block Polo T-Shirt',
     slug: 'van-heusen-mustard-white-navy-color-block-polo-tshirt',
