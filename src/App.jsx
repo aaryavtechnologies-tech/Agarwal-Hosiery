@@ -4,6 +4,7 @@ import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingMobileBar from './components/FloatingMobileBar';
+import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -84,6 +85,9 @@ export default function App() {
 
           {/* Global Premium Footer */}
           <Footer />
+
+          {/* Global Floating WhatsApp Direct Chat Button */}
+          <FloatingWhatsAppButton />
 
           {/* Mobile Bottom Quick-Action Bar */}
           <FloatingMobileBar />
