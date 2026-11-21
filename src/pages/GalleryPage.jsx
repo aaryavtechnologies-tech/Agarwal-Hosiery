@@ -339,6 +339,123 @@ export default function GalleryPage() {
       image: '/images/mens-collection/mens-white-cotton-jogger-trackpants.jpg',
       aspect: 'col-span-1 md:col-span-4 row-span-2',
       caption: 'Pure combed cotton white lounge joggers with elasticated drawstring waist and tapered cuffs.'
+    },
+    {
+      id: 43,
+      title: "Women's Pastel Floral Scalloped Embroidered Handkerchief Set",
+      category: 'hosiery',
+      categoryLabel: "Ladies' Handkerchiefs",
+      image: '/images/hosiery/womens-pastel-scalloped-floral-handkerchiefs.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Fine floral stem embroidery with scalloped crochet borders in pastel pink, peach, lilac, buttercup, and sky blue.'
+    },
+    {
+      id: 44,
+      title: "Women's Split-Toe Floral Jacquard Cotton Ankle Socks (Pack of 5)",
+      category: 'hosiery',
+      categoryLabel: "Women's Socks",
+      image: '/images/hosiery/womens-split-toe-tabi-ankle-socks-5pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Specialized tabi split-toe knit socks for chappals and flip-flops in soft sage, lavender, black, and sky blue.'
+    },
+    {
+      id: 45,
+      title: "Men's Tricolor Tab Low-Cut Athletic Cotton Ankle Socks (Pack of 5)",
+      category: 'hosiery',
+      categoryLabel: "Men's Socks",
+      image: '/images/hosiery/mens-athletic-tricolor-tab-ankle-socks-5pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Blister-preventing heel pull-tab socks with contrast red toe seams and arch compression support.'
+    },
+    {
+      id: 46,
+      title: "Unisex Honeycomb Cushion Athletic Performance Ankle Socks (Pack of 6)",
+      category: 'hosiery',
+      categoryLabel: 'Sports & Athletic Socks',
+      image: '/images/hosiery/unisex-cushion-performance-running-socks-6pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'High-density terry cushioned sports running socks with breathable honeycomb open mesh and neon X monogram.'
+    },
+    {
+      id: 47,
+      title: "Nordic Geometric Fair-Isle Patterned Knit Ankle Socks",
+      category: 'hosiery',
+      categoryLabel: 'Fashion Socks',
+      image: '/images/hosiery/womens-tribal-fairisle-pattern-ankle-socks.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Authentic Nordic geometric jacquard pattern with warm brushed interior and snug elastic ribbed cuffs.'
+    },
+    {
+      id: 48,
+      title: "HRX Active Pastel Cotton Ankle Sports Socks (Pack of 3)",
+      category: 'hosiery',
+      categoryLabel: 'Sports & Athletic Socks',
+      image: '/images/hosiery/hrx-pastel-cotton-ankle-sports-socks-3pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Lightweight pastel activewear ankle socks with midfoot arch compression bands and terry cushioned soles.'
+    },
+    {
+      id: 49,
+      title: "Men's Ribbed Quarter Crew Monogram Embroidered Socks (Pack of 5)",
+      category: 'hosiery',
+      categoryLabel: "Men's Socks",
+      image: '/images/hosiery/mens-ribbed-quarter-crew-socks-5pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Vertical ribbed quarter crew socks with cursive monogram embroidery in essential boardroom shades.'
+    },
+    {
+      id: 50,
+      title: "Classic Paisley Heritage Cotton Bandana Pocket Squares (Pair of 2)",
+      category: 'hosiery',
+      categoryLabel: 'Bandanas & Rumals',
+      image: '/images/hosiery/classic-paisley-cotton-bandana-rumal-pair.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Crimson red and royal navy blue paisley bandana handkerchiefs crafted from 100% spun cotton with rolled hems.'
+    },
+    {
+      id: 51,
+      title: "Women's Diamond Pointelle Textured Pastel Ankle Socks (Pack of 3)",
+      category: 'hosiery',
+      categoryLabel: "Women's Socks",
+      image: '/images/hosiery/womens-pastel-textured-knit-socks-3pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Delicate openwork diamond textured pointelle knit in mint green, blush peach, and buttercup yellow.'
+    },
+    {
+      id: 52,
+      title: "Vintage Polka Dot Combed Cotton Mid-Calf Crew Socks",
+      category: 'hosiery',
+      categoryLabel: 'Fashion Socks',
+      image: '/images/hosiery/classic-polka-dot-cotton-calf-crew-socks.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Retro jet-black mid-calf crew socks with crisp woven white polka dots and reinforced seamless toe closure.'
+    },
+    {
+      id: 53,
+      title: "Gents Executive Crisp White Striped Handkerchiefs (Pack of 6)",
+      category: 'hosiery',
+      categoryLabel: "Men's Handkerchiefs",
+      image: '/images/hosiery/executive-white-striped-pocket-handkerchiefs-6pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Formal boardroom pure white combed cotton pocket squares featuring satin vertical accent pinstripes.'
+    },
+    {
+      id: 54,
+      title: "Cotton Square Plush Waffle Pocket Towels & Face Napkins (Pack of 5)",
+      category: 'hosiery',
+      categoryLabel: 'Pocket Napkins & Towels',
+      image: '/images/hosiery/cotton-square-pastel-plush-pocket-napkins-5pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Ultra-absorbent pure cotton honeycomb waffle-weave pocket towels and gym face napkins in soft pastel hues.'
+    },
+    {
+      id: 55,
+      title: "Pastel Waffle-Knit Embroidered Floral Handkerchief Set (Pack of 12)",
+      category: 'hosiery',
+      categoryLabel: 'Handkerchiefs & Rumals',
+      image: '/images/hosiery/embroidered-waffle-knit-handkerchiefs-12pack.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: '12-piece family pack of waffle-textured cotton pocket squares with corner floral embroidery and edge trim.'
     }
   ];
 

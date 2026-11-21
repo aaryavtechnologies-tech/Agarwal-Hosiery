@@ -31,24 +31,24 @@ export default function CollectionPage() {
     },
     'womens-hosiery': {
       label: 'Ladies Essentials',
-      title: "WOMEN'S HOSIERY & HANDKERCHIEFS",
-      subtitle: 'Pure combed cotton floral lace handkerchiefs and everyday accessories.',
+      title: "WOMEN'S HOSIERY, SOCKS & HANDKERCHIEFS",
+      subtitle: 'Floral lace handkerchiefs, split-toe tabi ankle socks, pointelle knits, and daily essentials.',
       filter: (p) => p.category === 'hosiery' && p.targetGender === 'women',
-      image: '/images/hosiery/womens-floral-lace-handkerchiefs.jpg'
+      image: '/images/hosiery/womens-pastel-scalloped-floral-handkerchiefs.jpg'
     },
     'mens-hosiery': {
       label: 'Men Essentials',
-      title: "MEN'S HOSIERY & HANDKERCHIEFS",
-      subtitle: 'Executive combed cotton pocket rumals, satin stripe gift box sets, and woven checks.',
+      title: "MEN'S HOSIERY, SOCKS & HANDKERCHIEFS",
+      subtitle: 'Executive combed cotton pocket rumals, athletic low-cut socks, ribbed crew socks, and gift sets.',
       filter: (p) => p.category === 'hosiery' && (p.targetGender === 'men' || p.targetGender === 'unisex'),
-      image: '/images/hosiery/mens-premium-cotton-handkerchiefs-box.jpg'
+      image: '/images/hosiery/mens-athletic-tricolor-tab-ankle-socks-5pack.jpg'
     },
     hosiery: {
       label: 'Pure Combed Cotton',
-      title: 'HOSIERY & HANDKERCHIEFS',
-      subtitle: 'Fine combed cotton pocket rumals, embroidered ladies handkerchiefs, and executive box sets.',
+      title: 'HOSIERY, SOCKS & HANDKERCHIEFS',
+      subtitle: 'Authentic combed cotton athletic ankle socks, crew socks, ladies floral rumals, and executive gift box sets.',
       filter: (p) => p.category === 'hosiery',
-      image: '/images/hosiery/mens-premium-cotton-handkerchiefs-box.jpg'
+      image: '/images/hosiery/unisex-cushion-performance-running-socks-6pack.jpg'
     },
     mats: {
       label: 'Home Textiles',

@@ -190,7 +190,7 @@ export const PRODUCTS = [
     rating: 4.9,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-7-ivory-block-gown.png'
+      '/images/womens-collection/outfit-7-ivory-block-gown.png'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
         description: 'Modern Indo-Western gown crafted in breathable cotton-silk with traditional block-print sweetheart bodice, tiered bell tassels, and contrasting panel flare inserts.',
@@ -218,7 +218,7 @@ export const PRODUCTS = [
     rating: 5.0,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-8-black-maroon-navratri-gown.jpg'
+      '/images/womens-collection/outfit-8-black-maroon-navratri-gown.jpg'
     ],
     sizes: ['M', 'L', 'XL', 'XXL'],
         description: 'Exquisite Navratri edition flared gown in rich jet black with bandhani-print sweetheart bustier, cascading bead hangings, and pleated kali flare for Garba nights.',
@@ -246,7 +246,7 @@ export const PRODUCTS = [
     rating: 4.9,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-10-white-lavender-anarkali.jpg'
+      '/images/womens-collection/outfit-10-white-lavender-anarkali.jpg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
         description: 'Dreamy pearl white pure cotton anarkali ensemble featuring delicate lavender floral threadwork across the yoke and hemline, paired with matching trousers and an airy floral dupatta.',
@@ -274,7 +274,7 @@ export const PRODUCTS = [
     rating: 4.8,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-11-teal-peacock-kurta-set.jpg'
+      '/images/womens-collection/outfit-11-teal-peacock-kurta-set.jpg'
     ],
     sizes: ['M', 'L', 'XL', 'XXL'],
         description: 'Rich peacock teal long anarkali kurti decorated with traditional geometric motifs, gota patti work along the neckline and cuffs, paired with solid pants and sheer dupatta.',
@@ -302,7 +302,7 @@ export const PRODUCTS = [
     rating: 4.7,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-12-emerald-printed-midi-dress.jpg'
+      '/images/womens-collection/outfit-12-emerald-printed-midi-dress.jpg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
         description: 'Chic and breezy sleeveless midi dress crafted in breathable cotton with geometric prints, pointed collar neckline, and full front button-down placket.',
@@ -330,7 +330,7 @@ export const PRODUCTS = [
     rating: 4.8,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-13-fuchsia-pink-maxi-gown.jpg'
+      '/images/womens-collection/outfit-13-fuchsia-pink-maxi-gown.jpg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
         description: 'Vibrant fuchsia pink floor-length gown featuring intricate gold lattice zari embroidery on the bodice, bell ruffled sleeves, and tasseled waist tie-ups.',
@@ -358,7 +358,7 @@ export const PRODUCTS = [
     rating: 4.7,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-14-maroon-chevron-kurta-set.jpg'
+      '/images/womens-collection/outfit-14-maroon-chevron-kurta-set.jpg'
     ],
     sizes: ['M', 'L', 'XL', 'XXL'],
         description: 'Contemporary chevron printed A-line kurta featuring mirror work round neckline, 3/4th sleeves, paired with printed straight trousers and an expansive matching dupatta.',
@@ -386,7 +386,7 @@ export const PRODUCTS = [
     rating: 5.0,
     inStock: true,
     images: [
-      './images/womens-collection/outfit-15-ombre-sunset-lehenga-choli.jpg'
+      '/images/womens-collection/outfit-15-ombre-sunset-lehenga-choli.jpg'
     ],
     sizes: ['Free Size (Semi-Stitched)'],
         description: 'Spectacular sunset ombré festive lehenga choli featuring yellow-to-magenta gradient hues, traditional Bandhani and Patola border motifs, matching blouse, and sheer magenta net dupatta.',
@@ -848,6 +848,370 @@ export const PRODUCTS = [
       'Perfect for business attire, formal suits, or personal grooming'
     ]
   },
+  {
+    id: 'prod-h-01',
+    name: "Women's Pastel Floral Scalloped Embroidered Handkerchief Set",
+    slug: 'womens-pastel-floral-scalloped-embroidered-handkerchief-set',
+    category: 'hosiery',
+    categoryLabel: "Ladies' Handkerchiefs",
+    clothingType: 'essentials',
+    clothingTypeLabel: 'Embroidered Scallop Rumal',
+    targetGender: 'women',
+    price: 279,
+    originalPrice: 399,
+    badge: 'HAND-FINISHED',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/hosiery/womens-pastel-scalloped-floral-handkerchiefs.jpg'
+    ],
+    sizes: ['Pack of 6 (30 cm × 30 cm)', 'Pack of 10 Gift Set'],
+    description: "Delicate scalloped-hem pure cotton ladies handkerchiefs featuring fine pastel floral sprigs in blush pink, peach, lilac, buttercup, and sky blue. Super soft and gentle on sensitive skin.",
+    fabric: '100% Super-Combed Cotton with Scalloped Edge Embroidery',
+    details: [
+      'Fine floral stem embroidery with precision scalloped borders',
+      'Gentle, ultra-soft texture suited for face and personal care',
+      'Pastel color palette including lavender, rose pink, and cream',
+      'Machine wash gentle cycle in protective laundry mesh'
+    ]
+  },
+  {
+    id: 'prod-h-02',
+    name: "Women's Split-Toe Floral Jacquard Cotton Ankle Socks (Pack of 5)",
+    slug: 'womens-split-toe-floral-jacquard-cotton-ankle-socks-pack-of-5',
+    category: 'hosiery',
+    categoryLabel: "Women's Socks",
+    clothingType: 'socks',
+    clothingTypeLabel: 'Split-Toe Ankle Socks',
+    targetGender: 'women',
+    price: 349,
+    originalPrice: 499,
+    badge: 'TABI STYLE',
+    isFeatured: true,
+    rating: 4.8,
+    inStock: true,
+    images: [
+      '/images/hosiery/womens-split-toe-tabi-ankle-socks-5pack.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 4 - 8)'],
+    description: "Specialized split-toe (tabi) design designed for toe freedom, flip-flops, and traditional chappals. Knitted in breathable combed cotton with floral jacquard patterns in sage green, sky blue, lavender, black, and dusty rose.",
+    fabric: '80% Combed Cotton, 17% Polyamide, 3% Elastane',
+    details: [
+      'Split big-toe separation allows wearing with thong sandals and chappals',
+      'Textured floral jacquard knit for breathability and style',
+      'Comfort elastic ribbed welt prevents slippage without leaving marks',
+      'Pack of 5 coordinated pastel and neutral tones'
+    ]
+  },
+  {
+    id: 'prod-h-03',
+    name: "Men's Tricolor Tab Low-Cut Athletic Cotton Ankle Socks (Pack of 5)",
+    slug: 'mens-tricolor-tab-low-cut-athletic-cotton-ankle-socks-pack-of-5',
+    category: 'hosiery',
+    categoryLabel: "Men's Socks",
+    clothingType: 'socks',
+    clothingTypeLabel: 'Athletic Ankle Socks',
+    targetGender: 'men',
+    price: 399,
+    originalPrice: 549,
+    badge: 'COMFORT PULL-TAB',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/hosiery/mens-athletic-tricolor-tab-ankle-socks-5pack.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 7 - 11)'],
+    description: "Sport-engineered low-cut ankle socks featuring blister-preventing heel pull tabs with tricolor accents, contrast red toe seams, and cushioned arch compression. Colors include black, white, charcoal, heather grey, and teal.",
+    fabric: '82% Combed Cotton, 15% Nylon, 3% Spandex',
+    details: [
+      'Elevated heel tab prevents shoe collar chafing and Achilles tendon blister',
+      'Contrast toe line stitching with flat-seam closure for zero irritation',
+      'Ribbed arch support band holds sock firmly in place during movement',
+      'Pack of 5 versatile athletic and daily lifestyle shades'
+    ]
+  },
+  {
+    id: 'prod-h-04',
+    name: "Unisex Honeycomb Cushion Athletic Performance Ankle Socks (Pack of 6)",
+    slug: 'unisex-honeycomb-cushion-athletic-performance-ankle-socks-pack-of-6',
+    category: 'hosiery',
+    categoryLabel: 'Sports & Athletic Socks',
+    clothingType: 'socks',
+    clothingTypeLabel: 'Cushion Performance Socks',
+    targetGender: 'unisex',
+    price: 449,
+    originalPrice: 649,
+    badge: 'HIGH PERFORMANCE',
+    isFeatured: true,
+    rating: 5,
+    inStock: true,
+    images: [
+      '/images/hosiery/unisex-cushion-performance-running-socks-6pack.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 6 - 11)'],
+    description: "High-performance running and training socks engineered with breathable honeycomb instep mesh, reinforced terry cushion soles, and neon X signature embroidery. 6-pack in white, teal, charcoal, slate blue, heather grey, and navy.",
+    fabric: '78% Moisture-Wicking Combed Cotton, 18% Polyester, 4% Elastane',
+    details: [
+      'Honeycomb open-knit instep for active heat dissipation and ventilation',
+      'High-density terry padded footbed absorbs running impacts',
+      'Compression arch band reduces foot fatigue during sports',
+      'Reinforced heel and toe zones for 3x longer wear life'
+    ]
+  },
+  {
+    id: 'prod-h-05',
+    name: "Nordic Geometric Fair-Isle Patterned Knit Ankle Socks",
+    slug: 'nordic-geometric-fair-isle-patterned-knit-ankle-socks',
+    category: 'hosiery',
+    categoryLabel: 'Fashion Socks',
+    clothingType: 'socks',
+    clothingTypeLabel: 'Nordic Knit Ankle Socks',
+    targetGender: 'women',
+    price: 249,
+    originalPrice: 349,
+    badge: 'WINTER KNIT',
+    isFeatured: false,
+    rating: 4.7,
+    inStock: true,
+    images: [
+      '/images/hosiery/womens-tribal-fairisle-pattern-ankle-socks.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 4 - 8)'],
+    description: "Warm and stylish jacquard knit ankle socks featuring vintage Nordic fair-isle geometric motifs, contrast heel and toe, and snug elastic ribbed cuffs. Ideal with loafers, boots, and casual sneakers.",
+    fabric: '75% Cotton Blend, 20% Acrylic Thermal Yarn, 5% Spandex',
+    details: [
+      'Authentic Nordic geometric pattern with earthy rustic accents',
+      'Thermal brushed interior keeps feet warm and comfortable',
+      'Snug ribbed cuffs prevent slipping inside boots and shoes',
+      'Seamless toe box for smooth, non-binding fit'
+    ]
+  },
+  {
+    id: 'prod-h-06',
+    name: "HRX Active Pastel Cotton Ankle Sports Socks (Pack of 3)",
+    slug: 'hrx-active-pastel-cotton-ankle-sports-socks-pack-of-3',
+    category: 'hosiery',
+    categoryLabel: 'Sports & Athletic Socks',
+    clothingType: 'socks',
+    clothingTypeLabel: 'Active Ankle Sports Socks',
+    targetGender: 'women',
+    price: 299,
+    originalPrice: 429,
+    badge: 'HRX ACTIVE',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/hosiery/hrx-pastel-cotton-ankle-sports-socks-3pack.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 4 - 8)'],
+    description: "Branded HRX activewear ankle socks in fresh pastel tones of sky blue, soft blush pink, and mint green with engineered arch compression bands and cushioned terry footbeds for maximum workout comfort.",
+    fabric: '80% Combed Cotton, 16% Polyamide, 4% Elastane',
+    details: [
+      'Official HRX branded athletic knit with contrast footbed graphics',
+      'Midfoot arch compression band stabilizes sock during cardio and yoga',
+      'Terry cushioned bottom provides superior shock absorption',
+      'Pack of 3 uplifting pastel shades'
+    ]
+  },
+  {
+    id: 'prod-h-07',
+    name: "Men's Ribbed Quarter Crew Monogram Embroidered Socks (Pack of 5)",
+    slug: 'mens-ribbed-quarter-crew-monogram-embroidered-socks-pack-of-5',
+    category: 'hosiery',
+    categoryLabel: "Men's Socks",
+    clothingType: 'socks',
+    clothingTypeLabel: 'Ribbed Quarter Crew Socks',
+    targetGender: 'men',
+    price: 399,
+    originalPrice: 549,
+    badge: 'EVERYDAY FORMAL',
+    isFeatured: true,
+    rating: 4.8,
+    inStock: true,
+    images: [
+      '/images/hosiery/mens-ribbed-quarter-crew-socks-5pack.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 7 - 11)'],
+    description: "Classic vertical ribbed quarter crew socks accented with minimal cursive monogram embroidery. Knitted from ultra-soft combed cotton for everyday business casual wear. Pack includes black, white, charcoal, heather grey, and navy.",
+    fabric: '85% Super-Combed Cotton, 12% Nylon, 3% Lycra',
+    details: [
+      'Quarter crew length covers ankle and sits comfortably below mid-calf',
+      'Wide ribbed elastic channel ensures snug stay-up grip without tightness',
+      'Discreet cursive embroidered emblem adds executive distinction',
+      'Pack of 5 essential boardroom and casual colors'
+    ]
+  },
+  {
+    id: 'prod-h-08',
+    name: "Classic Paisley Heritage Cotton Bandana Pocket Squares (Pair of 2)",
+    slug: 'classic-paisley-heritage-cotton-bandana-pocket-squares-pair-of-2',
+    category: 'hosiery',
+    categoryLabel: 'Bandanas & Rumals',
+    clothingType: 'essentials',
+    clothingTypeLabel: 'Paisley Bandana Rumal',
+    targetGender: 'unisex',
+    price: 229,
+    originalPrice: 329,
+    badge: 'VINTAGE PAISLEY',
+    isFeatured: false,
+    rating: 4.8,
+    inStock: true,
+    images: [
+      '/images/hosiery/classic-paisley-cotton-bandana-rumal-pair.jpg'
+    ],
+    sizes: ['Standard Square (52 cm × 52 cm)'],
+    description: "Timeless twin-pack of crimson red and royal navy blue paisley bandana handkerchiefs. Made from 100% crisp spun cotton with rolled stitched hems. Wear as neckerchief, head wrap, face cover, or pocket square.",
+    fabric: '100% Pure Spun Cotton (Colorfast Print)',
+    details: [
+      'Classic Persian paisley scroll medallion design',
+      'Durable 4-sided rolled hem stitch prevents fraying',
+      'Multi-purpose utility: pocket square, hair bandana, neckerchief, rumal',
+      'Softens with every wash while retaining bold color brilliance'
+    ]
+  },
+  {
+    id: 'prod-h-09',
+    name: "Women's Diamond Pointelle Textured Pastel Ankle Socks (Pack of 3)",
+    slug: 'womens-diamond-pointelle-textured-pastel-ankle-socks-pack-of-3',
+    category: 'hosiery',
+    categoryLabel: "Women's Socks",
+    clothingType: 'socks',
+    clothingTypeLabel: 'Textured Diamond Ankle Socks',
+    targetGender: 'women',
+    price: 269,
+    originalPrice: 389,
+    badge: 'POINTELLE KNIT',
+    isFeatured: false,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/hosiery/womens-pastel-textured-knit-socks-3pack.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 4 - 8)'],
+    description: "Charming pastel ankle socks featuring a textured diamond waffle pointelle knit in mint green, soft blush peach, and buttercup yellow. Breathable, sweat-absorbent, and gentle against sensitive skin.",
+    fabric: '82% Combed Cotton, 15% Nylon, 3% Elastane',
+    details: [
+      'Openwork diamond textured knit ensures natural ventilation',
+      'Scalloped elasticated ankle collar stays gently in place',
+      'Soft combed cotton yarn prevents friction and foot odor',
+      'Pack of 3 gentle pastel spring shades'
+    ]
+  },
+  {
+    id: 'prod-h-10',
+    name: "Vintage Polka Dot Combed Cotton Mid-Calf Crew Socks",
+    slug: 'vintage-polka-dot-combed-cotton-mid-calf-crew-socks',
+    category: 'hosiery',
+    categoryLabel: 'Fashion Socks',
+    clothingType: 'socks',
+    clothingTypeLabel: 'Polka Dot Calf Crew Socks',
+    targetGender: 'unisex',
+    price: 199,
+    originalPrice: 299,
+    badge: 'RETRO CLASSIC',
+    isFeatured: false,
+    rating: 4.8,
+    inStock: true,
+    images: [
+      '/images/hosiery/classic-polka-dot-cotton-calf-crew-socks.jpg'
+    ],
+    sizes: ['Free Size (Fits UK 5 - 10)'],
+    description: "Retro-chic jet black mid-calf crew socks patterned with crisp white polka dots. Made with high-stretch elastane and smooth seamless toe closures. Pairs effortlessly with sneakers, brogues, and cropped trousers.",
+    fabric: '80% Combed Cotton, 17% Polyamide, 3% Spandex',
+    details: [
+      'Classic micro polka dot motif knit directly into fabric for long-term clarity',
+      'Mid-calf crew height with stay-up ribbed cuff',
+      'Reinforced heel cup and seamless toe closure for all-day comfort',
+      'Breathable cotton composition prevents sweat accumulation'
+    ]
+  },
+  {
+    id: 'prod-h-11',
+    name: "Gents Executive Crisp White Striped Handkerchiefs (Pack of 6)",
+    slug: 'gents-executive-crisp-white-striped-handkerchiefs-pack-of-6',
+    category: 'hosiery',
+    categoryLabel: "Men's Handkerchiefs",
+    clothingType: 'essentials',
+    clothingTypeLabel: 'Executive White Rumal',
+    targetGender: 'men',
+    price: 349,
+    originalPrice: 499,
+    badge: 'FORMAL EXECUTIVE',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/hosiery/executive-white-striped-pocket-handkerchiefs-6pack.jpg'
+    ],
+    sizes: ['Pack of 6 (42 cm × 42 cm)', 'Pack of 12 Value Pack'],
+    description: "Formal boardroom pure white cotton handkerchiefs featuring subtle satin contrast vertical pinstripes in slate grey, executive navy, and champagne gold. Crisp, absorbent, and elegantly finished.",
+    fabric: '100% Super-Combed Cotton (60s Egyptian Count)',
+    details: [
+      'Pure white combed cotton with yarn-dyed satin vertical side pinstripe',
+      'Precision stitched hem borders for clean formal pocket square fold',
+      'High moisture absorbency with fast-drying weave',
+      'Pack of 6 assorted stripe colors in presentation packaging'
+    ]
+  },
+  {
+    id: 'prod-h-12',
+    name: "Cotton Square Plush Waffle Pocket Towels & Face Napkins (Pack of 5)",
+    slug: 'cotton-square-plush-waffle-pocket-towels-face-napkins-pack-of-5',
+    category: 'hosiery',
+    categoryLabel: 'Pocket Napkins & Towels',
+    clothingType: 'essentials',
+    clothingTypeLabel: 'Plush Cotton Pocket Napkins',
+    targetGender: 'unisex',
+    price: 299,
+    originalPrice: 429,
+    badge: 'SUPER ABSORBENT',
+    isFeatured: true,
+    rating: 5,
+    inStock: true,
+    images: [
+      '/images/hosiery/cotton-square-pastel-plush-pocket-napkins-5pack.jpg'
+    ],
+    sizes: ['Pack of 5 (25 cm × 25 cm)'],
+    description: "Ultra-absorbent honeycomb waffle-weave pocket towels crafted from pure cotton. Perfect for gym bags, daily face refreshment, and delicate skin care. Stack includes baby pink, mint green, powder blue, and cream.",
+    fabric: '100% Plush Combed Waffle-Weave Cotton (380 GSM)',
+    details: [
+      'Plush waffle grid structure absorbs 4x its weight in water rapidly',
+      'Compact pocket size fits easily into handbags, backpacks, and sports pouches',
+      'Gentle and non-abrasive on sensitive facial skin and eyes',
+      'Pack of 5 pastel square napkins with sturdy bound edge hems'
+    ]
+  },
+  {
+    id: 'prod-h-13',
+    name: "Pastel Waffle-Knit Embroidered Floral Handkerchief Set (Pack of 12)",
+    slug: 'pastel-waffle-knit-embroidered-floral-handkerchief-set-pack-of-12',
+    category: 'hosiery',
+    categoryLabel: 'Handkerchiefs & Rumals',
+    clothingType: 'essentials',
+    clothingTypeLabel: 'Embroidered Floral Pocket Napkins',
+    targetGender: 'women',
+    price: 399,
+    originalPrice: 599,
+    badge: 'FAMILY PACK OF 12',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/hosiery/embroidered-waffle-knit-handkerchiefs-12pack.jpg'
+    ],
+    sizes: ['Pack of 12 Assorted (28 cm × 28 cm)'],
+    description: "Generous 12-piece family pack of waffle-textured cotton pocket squares featuring delicate corner floral embroidery, striped trims, and pastel tones. Ideal for daily family hygiene, gifts, and travel.",
+    fabric: '100% Pure Waffle Cotton with Corner Floral Stitching',
+    details: [
+      '12-pack assortment featuring floral embroidery and sporty border stripes',
+      'Waffle honeycomb texture provides instant sweat and moisture absorption',
+      'Reinforced overlocked edge stitching preventing fraying over hundreds of washes',
+      'Hypoallergenic combed cotton suitable for all skin types'
+    ]
+  },
 
   // --- Home Textiles & Doormats Collections ---
   {
@@ -1027,6 +1391,7 @@ export const CATEGORY_PILLS = [
   { id: 'men', label: "MEN'S WEAR", filterType: 'category', filterValue: 'men' },
   { id: 't-shirts', label: 'T-SHIRTS', filterType: 'clothingType', filterValue: 't-shirts' },
   { id: 'hosiery', label: 'HOSIERY & RUMALS', filterType: 'category', filterValue: 'hosiery' },
+  { id: 'socks', label: 'SOCKS', filterType: 'clothingType', filterValue: 'socks' },
   { id: 'mats', label: 'DOOR MATS & RUGS', filterType: 'category', filterValue: 'mats' },
   { id: 'kurtis', label: 'KURTIS', filterType: 'clothingType', filterValue: 'kurtis' },
   { id: 'kurta-sets', label: 'KURTA SETS', filterType: 'clothingType', filterValue: 'kurta-sets' },

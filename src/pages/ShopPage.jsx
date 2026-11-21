@@ -48,6 +48,7 @@ export default function ShopPage() {
     { label: 'T-Shirts & Polos', value: 't-shirts' },
     { label: 'Joggers & Track Pants', value: 'trousers' },
     { label: 'Dresses & Gowns', value: 'dresses' },
+    { label: 'Socks & Footwear Hosiery', value: 'socks' },
     { label: 'Handkerchiefs & Rumals', value: 'essentials' },
     { label: 'Entrance & Door Mats', value: 'doormats' }
   ];
