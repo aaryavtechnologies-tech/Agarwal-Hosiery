@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --color-charcoal: #151515;
+  --color-charcoal-card: #1c1c1c;
+  --color-charcoal-muted: #2d2d2d;
+  --color-ivory: #F8F6F2;
+  --color-ivory-light: #FAF8F5;
+  --color-gold: #C6A576;
+  --color-gold-hover: #D5B687;
+  --color-gold-dark: #A98756;
+  --color-gold-subtle: rgba(198, 165, 118, 0.15);
+  --color-softgray: #EAE7E2;
+  --color-softgray-dark: #D4D0C9;
+}
+
+/* Custom Base Styles */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Editorial Serif Headings */
+h1, h2, h3, .font-editorial {
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #151515;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A576;
+}
+
+/* Cinematic Zoom Animation */
+@keyframes ambientZoom {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+.animate-ambient-zoom {
+  animation: ambientZoom 24s ease-in-out infinite;
+}
+
+/* Subtle Staggered Fade Up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shimmer Accent */
+@keyframes goldPulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 4s ease-in-out infinite;
+}
+
+/* Respect Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-ambient-zoom {
+    animation: none !important;
+    transform: none !important;
+  }
+}
