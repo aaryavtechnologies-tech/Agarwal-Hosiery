@@ -22,15 +22,15 @@ export default function ShopPage() {
   const sizeParam = searchParams.get('size') || '';
   const colorParam = searchParams.get('color') || '';
   const minPriceParam = Number(searchParams.get('minPrice')) || 0;
-  const maxPriceParam = Number(searchParams.get('maxPrice')) || 10000;
+  const maxPriceParam = Number(searchParams.get('maxPrice')) || 3000;
   const sortParam = searchParams.get('sort') || 'featured';
 
   // Mobile & Desktop Filter Panel state
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
 
   // Price range constants
-  const ABSOLUTE_MIN_PRICE = 0;
-  const ABSOLUTE_MAX_PRICE = 10000;
+  const ABSOLUTE_MIN_PRICE = 100;
+  const ABSOLUTE_MAX_PRICE = 3000;
 
   // Available unique filter values from product data
   const availableCategories = [
@@ -390,15 +390,15 @@ export default function ShopPage() {
                       type="range"
                       min={ABSOLUTE_MIN_PRICE}
                       max={ABSOLUTE_MAX_PRICE}
-                      step={250}
+                      step={100}
                       value={maxPriceParam}
                       onChange={(e) => updateFilter('maxPrice', e.target.value)}
                       className="w-full accent-[#C6A576] cursor-pointer"
                     />
                     <div className="flex items-center justify-between text-[10px] text-white/40 mt-1">
-                      <span>₹0</span>
-                      <span>₹5,000</span>
-                      <span>₹10,000</span>
+                      <span>₹100</span>
+                      <span>₹1,500</span>
+                      <span>₹3,000</span>
                     </div>
                   </div>
                 </div>
