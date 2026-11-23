@@ -27,7 +27,7 @@ export default function ImageModal({ item, onClose }) {
       onClick={onClose}
     >
       <div
-        className="relative bg-[#151515] border border-white/15 max-w-4xl w-full overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
+        className="relative bg-[#151515] border border-white/15 max-w-5xl w-full overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -40,13 +40,13 @@ export default function ImageModal({ item, onClose }) {
         </button>
 
         {/* Image Side */}
-        <div className="w-full md:w-3/5 bg-black relative flex items-center justify-center overflow-hidden min-h-[320px] md:min-h-[500px]">
+        <div className="w-full md:w-3/5 bg-black/95 relative flex items-center justify-center p-3 sm:p-5 min-h-[320px] md:min-h-[520px]">
           <img
             src={item.image}
             alt={item.title}
-            className="w-full h-full object-cover object-center max-h-[500px] md:max-h-none"
+            className="max-w-full max-h-[75vh] w-auto h-auto object-contain mx-auto"
           />
-          <div className="absolute top-4 left-4">
+          <div className="absolute top-4 left-4 z-10">
             <span className="px-3 py-1 bg-black/70 backdrop-blur-md text-[10px] font-semibold uppercase tracking-[0.2em] text-[#C6A576] border border-[#C6A576]/30">
               {item.badge || item.categoryLabel}
             </span>

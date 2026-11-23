@@ -634,7 +634,7 @@ export default function GalleryPage() {
           onClick={() => setSelectedPhoto(null)}
         >
           <div
-            className="relative bg-[#181818] border border-white/15 max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row text-white shadow-2xl"
+            className="relative bg-[#181818] border border-white/15 max-w-5xl w-full max-h-[90vh] overflow-hidden flex flex-col md:flex-row text-white shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -644,11 +644,11 @@ export default function GalleryPage() {
               <X className="w-5 h-5" />
             </button>
 
-            <div className="w-full md:w-3/5 bg-black flex items-center justify-center overflow-hidden min-h-[300px]">
+            <div className="w-full md:w-3/5 bg-black/95 flex items-center justify-center p-3 sm:p-5 min-h-[320px] md:min-h-[520px]">
               <img
                 src={selectedPhoto.image}
                 alt={selectedPhoto.title}
-                className="w-full h-full object-cover max-h-[550px]"
+                className="max-w-full max-h-[75vh] w-auto h-auto object-contain mx-auto"
               />
             </div>
 
