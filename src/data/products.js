@@ -627,6 +627,122 @@ export const PRODUCTS = [
     ]
   },
   {
+    id: 'prod-w-26',
+    name: 'Pristine White Kutchi Mirror-Work Navratri Chaniya Choli Set',
+    slug: 'pristine-white-kutchi-mirror-work-navratri-chaniya-choli-set',
+    category: 'festive',
+    categoryLabel: 'Festive & Ethnic',
+    clothingType: 'lehengas',
+    clothingTypeLabel: 'Chaniya Choli',
+    targetGender: 'women',
+    price: 4999,
+    originalPrice: 6999,
+    badge: 'NAVRATRI SPECIAL',
+    isFeatured: true,
+    rating: 5.0,
+    inStock: true,
+    images: [
+      '/images/womens-collection/white-kutchi-mirrorwork-chaniya-choli.jpg'
+    ],
+    sizes: ['Free Size (Semi-Stitched)'],
+    description: 'Breathtaking pure white Gujarati Garba Chaniya Choli ensemble featuring a heavily hand-embroidered multi-color mirror-work blouse, a pristine pleated white skirt adorned with circular mirror motifs and gold paneling, colorful hanging pom-pom latkans, and an ornate arch-embroidered mirror border with vibrant rainbow fringe.',
+    fabric: 'Premium Combed Cotton & Rayon with Authentic Kutchi Mirror Work',
+    details: [
+      'Stitched multi-color embroidered choli blouse with genuine abhala mirror embellishments',
+      'Full-flare pure white pleated skirt with vertical gold trims and circular mirror motifs',
+      'Embroidered waistband with colorful handcrafted pom-pom and mirror latkan ties',
+      'Ornate multicolor arch-embroidered hemline with festive rainbow fringe',
+      'Care: Dry clean only to preserve fine mirror and thread craft'
+    ]
+  },
+  {
+    id: 'prod-w-27',
+    name: 'Teal Botanical Vine Printed Breathable Cotton Short Kurti',
+    slug: 'teal-botanical-vine-printed-cotton-short-kurti',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurtis',
+    clothingTypeLabel: 'Short Kurti Tunic',
+    targetGender: 'women',
+    price: 899,
+    originalPrice: 1299,
+    badge: 'EVERYDAY CHIC',
+    isFeatured: true,
+    rating: 4.8,
+    inStock: true,
+    images: [
+      '/images/womens-collection/teal-botanical-leaf-cotton-short-kurti-tunic.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Crisp and airy off-white cotton short kurti / tunic top adorned with a soothing all-over turquoise and teal leafy botanical vine print. Designed with an easy round neckline, center button placket, 3/4th cuffed sleeves, and a flattering flared tunic hem.',
+    fabric: '100% Breathable Combed Cotton Tunic Fabric',
+    details: [
+      'Fresh turquoise and ocean teal botanical leaf prints on ivory base',
+      'Functional front button placket with neatly tailored round neckline',
+      '3/4 sleeves with turned-up stitch cuff details',
+      'Pairs effortlessly with denim jeans, palazzos, or cotton trousers',
+      'Care: Machine wash cold with mild detergent; dry in shade'
+    ]
+  },
+  {
+    id: 'prod-w-28',
+    name: 'Plus Collection Mocha & Earth Abstract Brushstroke Cotton Tunic',
+    slug: 'plus-collection-mocha-earth-abstract-brushstroke-tunic',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurtis',
+    clothingTypeLabel: 'Abstract Short Kurti',
+    targetGender: 'women',
+    price: 949,
+    originalPrice: 1399,
+    badge: 'NEW ARRIVAL',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/womens-collection/beige-mocha-abstract-brushstroke-tunic-kurti.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Contemporary designer short kurti / fusion tunic from Plus Collection featuring an earthy palette of camel beige, warm mocha brown, and charcoal black abstract brushstrokes. Styled with a tailored mandarin notch neckline, contrast button accents, and dropped 3/4 sleeves.',
+    fabric: 'Premium Soft-Touch Cotton-Rayon Slub',
+    details: [
+      'Bold modern abstract brushstroke & geometric block art print',
+      'Smart mandarin notch collar with trio button closure',
+      'Relaxed comfort-fit silhouette suitable for office or casual wear',
+      'Pre-washed and shrink-resistant for lasting shape and color',
+      'Care: Gentle hand or machine wash in cold water'
+    ]
+  },
+  {
+    id: 'prod-w-29',
+    name: 'Plus Collection Blush Pink Embroidered Floral Cotton Tunic',
+    slug: 'plus-collection-blush-pink-embroidered-floral-cotton-tunic',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurtis',
+    clothingTypeLabel: 'Embroidered Tunic Kurti',
+    targetGender: 'women',
+    price: 1199,
+    originalPrice: 1699,
+    badge: 'ARTISAN EMBROIDERY',
+    isFeatured: true,
+    rating: 5.0,
+    inStock: true,
+    images: [
+      '/images/womens-collection/blush-pink-embroidered-floral-cotton-short-kurti.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Exquisite Plus Collection pastel blush pink short kurti crafted from a premium cotton blend and highlighted with delicate white floral branch embroidery. Accented with scalloped lace along the V-neckline, center inverted box pleat, and folded cuff sleeves.',
+    fabric: 'Premium Textured Cotton Blend with Schiffli-Style White Threadwork',
+    details: [
+      'Intricate all-over white floral vine and flower motif threadwork',
+      'Delicate crochet lace detailing along the flattering V-neckline',
+      'Comfortable 3/4th sleeves with tailored fold-up cuffs',
+      'Ideal for festive daytime gatherings, brunches, or workwear styling',
+      'Care: Gentle hand wash or dry clean recommended'
+    ]
+  },
+  {
     id: 'prod-m-05',
     name: 'Van Heusen Mustard, White & Navy Color-Block Polo T-Shirt',
     slug: 'van-heusen-mustard-white-navy-color-block-polo-tshirt',

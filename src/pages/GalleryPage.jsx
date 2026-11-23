@@ -492,6 +492,42 @@ export default function GalleryPage() {
       image: '/images/womens-collection/rust-orange-mandala-kurta-palazzo-set.jpg',
       aspect: 'col-span-1 md:col-span-4 row-span-2',
       caption: 'Warm terracotta rust-orange straight cotton kurti with mandala block print motifs, matching palazzo trousers, and ivory border dupatta.'
+    },
+    {
+      id: 60,
+      title: "Pristine White Kutchi Mirror-Work Navratri Chaniya Choli Set",
+      category: 'festive',
+      categoryLabel: "Festive Ensembles",
+      image: '/images/womens-collection/white-kutchi-mirrorwork-chaniya-choli.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Full-flared pristine white Garba lehenga skirt with gold panel accents, pom-pom latkans, ornate arch mirror border hem, and colorful embroidered blouse.'
+    },
+    {
+      id: 61,
+      title: "Teal Botanical Vine Printed Breathable Cotton Short Kurti",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/teal-botanical-leaf-cotton-short-kurti-tunic.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Airy ivory pure cotton short kurti tunic sprinkled with refreshing teal botanical vine prints, button placket, and 3/4th cuffed sleeves.'
+    },
+    {
+      id: 62,
+      title: "Plus Collection Mocha & Earth Abstract Brushstroke Cotton Tunic",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/beige-mocha-abstract-brushstroke-tunic-kurti.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Chic contemporary fusion short kurti featuring earthy mocha, tan, and black abstract brushstroke prints with mandarin notch collar.'
+    },
+    {
+      id: 63,
+      title: "Plus Collection Blush Pink Embroidered Floral Cotton Tunic",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/blush-pink-embroidered-floral-cotton-short-kurti.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Pastel dusty rose-blush cotton blend tunic adorned with delicate white floral branch embroidery, lace-trimmed V-neckline, and box pleat.'
     }
   ];
 
