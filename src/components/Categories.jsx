@@ -61,7 +61,7 @@ export default function Categories({ onSelectCategory }) {
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-108 brightness-[0.9] group-hover:brightness-[0.98]"
+                  className="w-full h-full object-cover object-top origin-top transition-transform duration-700 ease-out group-hover:scale-105 brightness-[0.9] group-hover:brightness-[0.98]"
                   loading="lazy"
                   decoding="async"
                 />

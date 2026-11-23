@@ -65,7 +65,7 @@ export default function Lookbook({ activeFilter, setActiveFilter }) {
             <div
               key={item.id}
               onClick={() => setSelectedItem(item)}
-              className={`group relative overflow-hidden bg-[#151515] cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 min-h-[380px] sm:min-h-[440px] flex flex-col justify-end ${item.span}`}
+              className={`group relative overflow-hidden bg-[#151515] cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 min-h-[420px] sm:min-h-[480px] flex flex-col justify-end ${item.span}`}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
@@ -80,7 +80,7 @@ export default function Lookbook({ activeFilter, setActiveFilter }) {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-108 brightness-[0.92] group-hover:brightness-[1]"
+                  className="w-full h-full object-cover object-top origin-top transition-transform duration-700 ease-out group-hover:scale-105 brightness-[0.92] group-hover:brightness-[1]"
                   loading="lazy"
                   decoding="async"
                 />
