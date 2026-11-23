@@ -743,6 +743,122 @@ export const PRODUCTS = [
     ]
   },
   {
+    id: 'prod-w-30',
+    name: 'Crimson Red & Gold Zari Anarkali Kurta Set with Charcoal Dupatta',
+    slug: 'crimson-red-gold-zari-anarkali-kurta-set-charcoal-dupatta',
+    category: 'festive',
+    categoryLabel: 'Festive & Ethnic',
+    clothingType: 'kurta-sets',
+    clothingTypeLabel: 'Flared Anarkali Set',
+    targetGender: 'women',
+    price: 2499,
+    originalPrice: 3499,
+    badge: 'FESTIVE SPECIAL',
+    isFeatured: true,
+    rating: 5.0,
+    inStock: true,
+    images: [
+      '/images/womens-collection/crimson-red-gold-anarkali-suit-charcoal-dupatta.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Regal crimson red flared anarkali kurta adorned with all-over gold foil floral bootis and an ornate gold zari embroidered chest yoke. Paired with matching solid red churidar bottoms and a striking contrast charcoal black dupatta embellished with red floral motifs and scalloped gold lace borders.',
+    fabric: 'Fine Cotton Silk with Gold Zari & Resham Embroidery',
+    details: [
+      'Heavily embellished gold zari & sequin yoke with intricate geometric framing',
+      'Flared kalidar silhouette with rich gold printed border hemline',
+      'Includes coordinated solid red churidar trousers',
+      'Contrasting charcoal grey-black dupatta with red booti prints & scalloped border',
+      'Care: Dry clean recommended'
+    ]
+  },
+  {
+    id: 'prod-w-31',
+    name: 'Multicolor Kutchi Embroidered Koti & Patchwork Navratri Chaniya Choli',
+    slug: 'multicolor-kutchi-embroidered-koti-patchwork-navratri-chaniya-choli',
+    category: 'festive',
+    categoryLabel: 'Festive & Ethnic',
+    clothingType: 'lehengas',
+    clothingTypeLabel: 'Chaniya Choli',
+    targetGender: 'women',
+    price: 2899,
+    originalPrice: 3899,
+    badge: 'HERITAGE ARTISAN',
+    isFeatured: true,
+    rating: 5.0,
+    inStock: true,
+    images: [
+      '/images/womens-collection/multicolor-patchwork-kutchi-jacket-chaniya-choli.jpg'
+    ],
+    sizes: ['Free Size (Semi-Stitched)'],
+    description: 'Spectacular authentic Gujarati Navratri Garba Chaniya Choli set. Features a sleeveless bright yellow Kutchi embroidered koti jacket over a deep maroon crop inner, a voluminous multi-panel patchwork lehenga skirt adorned with genuine glass mirror work and golden gota patti border, and a vibrant marigold orange dupatta with dense mirrorwork borders.',
+    fabric: 'Heritage Kutchi Cotton with Real Abhala Mirror Work & Patchwork',
+    details: [
+      'Traditional yellow embroidered koti vest with green dori tie-up accents',
+      'Multi-color vertical patchwork kalis creating a breathtaking swirl during Garba',
+      'Heavy golden gota lace and mirror border along the lehenga hem',
+      'Bright marigold orange dupatta with floral mirrorwork border trim',
+      'Care: Dry clean only to preserve fine artisan threadwork and mirrors'
+    ]
+  },
+  {
+    id: 'prod-w-32',
+    name: 'Dusty Rose Pink Batik Leaf Print Cotton Kurta Pant Set with Dupatta',
+    slug: 'dusty-rose-pink-batik-leaf-print-cotton-kurta-pant-set',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurta-sets',
+    clothingTypeLabel: 'Kurta Pant Set',
+    targetGender: 'women',
+    price: 1699,
+    originalPrice: 2299,
+    badge: 'COTTON COMFORT',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/womens-collection/rose-pink-batik-leaf-print-kurta-pant-set.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Graceful and soothing dusty rose-pink pure cotton straight kurta featuring an intricate batik-inspired vertical leaf branch print. Designed with a smart mandarin collar, wooden-tone button placket, coordinated straight cotton pants, and an artistic circular mandala batik print dupatta.',
+    fabric: '100% Pure Combed Cotton with Batik Wax-Resist Block Prints',
+    details: [
+      'Allover botanical leaf print with earthy bronze accent branch motifs',
+      'Mandarin collar with tailored button placket and side slit straight cut',
+      'Comfortable matching solid rose pink straight cigarette trousers',
+      'Artisanal circular sun/mandala print cotton mulmul dupatta',
+      'Care: Hand wash cold with mild detergent; dry in shade'
+    ]
+  },
+  {
+    id: 'prod-w-33',
+    name: 'Peacock Teal & Lime Bandhani Shaded Flared Kurta Set with Dupatta',
+    slug: 'peacock-teal-lime-bandhani-shaded-flared-kurta-set',
+    category: 'women',
+    categoryLabel: "Women's Wear",
+    clothingType: 'kurta-sets',
+    clothingTypeLabel: 'Flared Kurta Set',
+    targetGender: 'women',
+    price: 1899,
+    originalPrice: 2599,
+    badge: 'NEW ARRIVAL',
+    isFeatured: true,
+    rating: 4.9,
+    inStock: true,
+    images: [
+      '/images/womens-collection/peacock-teal-shaded-bandhani-flared-kurta-set.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Striking peacock teal and fresh lime-green shaded tie-dye Bandhani print flared kurta set. Styled with delicate gold resham threadwork around the round notch neckline, gentle gathered waist flare, matching teal straight pants, and a coordinated printed bandhani dupatta featuring traditional geometric border motifs.',
+    fabric: 'Breathable Slub Cotton with Traditional Bandhani Tie-Dye Print',
+    details: [
+      'Dual-tone peacock ocean teal and lime green tie-dye background',
+      'Intricate gold thread embroidery highlighting the neckline and chest',
+      'Flattering flared A-line silhouette with gathered waist accents',
+      'Matching solid teal cigarette pants and geometric border dupatta',
+      'Care: Machine wash gentle cycle or hand wash cold'
+    ]
+  },
+  {
     id: 'prod-m-05',
     name: 'Van Heusen Mustard, White & Navy Color-Block Polo T-Shirt',
     slug: 'van-heusen-mustard-white-navy-color-block-polo-tshirt',

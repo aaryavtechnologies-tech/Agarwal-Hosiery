@@ -528,6 +528,42 @@ export default function GalleryPage() {
       image: '/images/womens-collection/blush-pink-embroidered-floral-cotton-short-kurti.jpg',
       aspect: 'col-span-1 md:col-span-4 row-span-2',
       caption: 'Pastel dusty rose-blush cotton blend tunic adorned with delicate white floral branch embroidery, lace-trimmed V-neckline, and box pleat.'
+    },
+    {
+      id: 64,
+      title: "Crimson Red & Gold Zari Anarkali Kurta Set with Charcoal Dupatta",
+      category: 'festive',
+      categoryLabel: "Festive Ensembles",
+      image: '/images/womens-collection/crimson-red-gold-anarkali-suit-charcoal-dupatta.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Regal crimson red flared anarkali kurta with gold foil floral bootis, heavy gold zari yoke embroidery, matching red churidar, and contrast charcoal black dupatta.'
+    },
+    {
+      id: 65,
+      title: "Multicolor Kutchi Embroidered Koti & Patchwork Navratri Chaniya Choli",
+      category: 'festive',
+      categoryLabel: "Festive Ensembles",
+      image: '/images/womens-collection/multicolor-patchwork-kutchi-jacket-chaniya-choli.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Authentic Gujarati Garba ensemble featuring yellow Kutchi embroidered koti vest, multicolor patchwork mirror-work lehenga flare, and marigold orange dupatta.'
+    },
+    {
+      id: 66,
+      title: "Dusty Rose Pink Batik Leaf Print Cotton Kurta Pant Set with Dupatta",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/rose-pink-batik-leaf-print-kurta-pant-set.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Soothing dusty rose-pink pure cotton straight kurta featuring batik leaf prints, mandarin button placket, matching straight pants, and mandala cotton dupatta.'
+    },
+    {
+      id: 67,
+      title: "Peacock Teal & Lime Bandhani Shaded Flared Kurta Set with Dupatta",
+      category: 'women',
+      categoryLabel: "Women's Wear",
+      image: '/images/womens-collection/peacock-teal-shaded-bandhani-flared-kurta-set.jpg',
+      aspect: 'col-span-1 md:col-span-4 row-span-2',
+      caption: 'Peacock teal and lime shaded tie-dye bandhani flared kurta with gold neckline embroidery, matching straight pants, and geometric border dupatta.'
     }
   ];
 
