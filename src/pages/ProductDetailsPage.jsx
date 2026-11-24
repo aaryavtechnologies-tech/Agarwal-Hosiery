@@ -10,8 +10,10 @@ import {
   Building,
   RotateCcw,
   Sparkles,
+  ChevronLeft,
   ChevronRight,
   ZoomIn,
+  Copy,
   X
 } from 'lucide-react';
 import { PRODUCTS } from '../data/products';
@@ -114,6 +116,58 @@ export default function ProductDetailsPage() {
                   </span>
                 </div>
               )}
+
+              {/* Multi-Image Lucide Copy Badge */}
+              {product.images && product.images.length > 1 && (
+                <div
+                  className="absolute top-4 right-4 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-black/80 backdrop-blur-md text-white text-xs font-semibold border border-[#C6A576]/50 shadow-lg pointer-events-none"
+                  title="Multi-photo ensemble (slide to view)"
+                >
+                  <Copy className="w-3.5 h-3.5 text-[#C6A576]" />
+                  <span>{activeImageIndex + 1} / {product.images.length}</span>
+                </div>
+              )}
+
+              {/* Slide Controls (Prev / Next) for Multi-Image Details */}
+              {product.images && product.images.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveImageIndex((prev) => (prev === 0 ? product.images.length - 1 : prev - 1));
+                    }}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/75 hover:bg-[#C6A576] hover:text-[#151515] text-white flex items-center justify-center opacity-85 group-hover:opacity-100 transition-all duration-200 shadow-xl border border-white/20 hover:scale-110"
+                    aria-label="Previous photo"
+                    title="Previous photo"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setActiveImageIndex((prev) => (prev === product.images.length - 1 ? 0 : prev + 1));
+                    }}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/75 hover:bg-[#C6A576] hover:text-[#151515] text-white flex items-center justify-center opacity-85 group-hover:opacity-100 transition-all duration-200 shadow-xl border border-white/20 hover:scale-110"
+                    aria-label="Next photo"
+                    title="Next photo"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+
+                  {/* Slide Dots Indicator */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 pointer-events-none">
+                    {product.images.map((_, dotIdx) => (
+                      <span
+                        key={dotIdx}
+                        className={`h-1.5 rounded-full transition-all duration-300 ${activeImageIndex === dotIdx ? "w-5 bg-[#C6A576] shadow-sm" : "w-1.5 bg-white/60"}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+
               {/* Zoom pill indicator */}
               <div className="absolute bottom-4 right-4 z-10 opacity-80 group-hover:opacity-100 transition-opacity">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#151515]/90 text-[#F8F6F2] text-[11px] font-medium uppercase tracking-wider backdrop-blur-md shadow-lg border border-white/10">
@@ -307,14 +361,23 @@ export default function ProductDetailsPage() {
         )}
       </div>
 
-      {/* Full-Screen Lightbox Modal on Image Click */}
+      {/* Full-Screen Lightbox Modal on Image Click with Multi-Image Slide */}
       {isLightboxOpen && (
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 bg-black/92 backdrop-blur-md flex items-center justify-center p-4 sm:p-8 animate-fadeIn"
+          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center p-4 sm:p-8 animate-fadeIn"
           onClick={() => setIsLightboxOpen(false)}
         >
+          {/* Top Left: Multi-photo Lucide Copy badge */}
+          {product.images && product.images.length > 1 && (
+            <div className="absolute top-5 left-5 z-50 flex items-center gap-2 px-3 py-1.5 bg-black/75 backdrop-blur-md text-white text-xs font-medium border border-[#C6A576]/40 shadow-lg pointer-events-none">
+              <Copy className="w-4 h-4 text-[#C6A576]" />
+              <span>{activeImageIndex + 1} / {product.images.length}</span>
+            </div>
+          )}
+
+          {/* Close button */}
           <button
             onClick={() => setIsLightboxOpen(false)}
             className="absolute top-5 right-5 p-2.5 bg-white/10 hover:bg-[#C6A576] hover:text-[#151515] text-white rounded-full transition-colors z-50 shadow-lg"
@@ -323,6 +386,36 @@ export default function ProductDetailsPage() {
             <X className="w-6 h-6" />
           </button>
 
+          {/* Lightbox Slider Prev/Next Controls */}
+          {product.images && product.images.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveImageIndex((prev) => (prev === 0 ? product.images.length - 1 : prev - 1));
+                }}
+                className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 p-3 bg-black/70 hover:bg-[#C6A576] hover:text-[#151515] text-white rounded-full transition-all shadow-2xl border border-white/20 hover:scale-110"
+                aria-label="Previous photo"
+                title="Previous photo"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveImageIndex((prev) => (prev === product.images.length - 1 ? 0 : prev + 1));
+                }}
+                className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 p-3 bg-black/70 hover:bg-[#C6A576] hover:text-[#151515] text-white rounded-full transition-all shadow-2xl border border-white/20 hover:scale-110"
+                aria-label="Next photo"
+                title="Next photo"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+            </>
+          )}
+
           <div
             className="relative max-w-4xl max-h-[90vh] flex flex-col items-center cursor-default"
             onClick={(e) => e.stopPropagation()}
@@ -330,9 +423,26 @@ export default function ProductDetailsPage() {
             <img
               src={currentImage}
               alt={product.name}
-              className="max-w-full max-h-[80vh] object-contain shadow-2xl border border-white/10"
+              className="max-w-full max-h-[72vh] object-contain shadow-2xl border border-white/10"
             />
-            <div className="mt-4 text-center text-[#F8F6F2]">
+
+            {/* Thumbnail carousel strip in lightbox */}
+            {product.images && product.images.length > 1 && (
+              <div className="flex items-center justify-center gap-2 mt-3 z-30 overflow-x-auto max-w-full py-1">
+                {product.images.map((img, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setActiveImageIndex(idx)}
+                    className={`w-12 h-14 overflow-hidden rounded border-2 transition-all flex-shrink-0 ${activeImageIndex === idx ? "border-[#C6A576] scale-105 shadow-md" : "border-white/20 opacity-60 hover:opacity-100"}`}
+                  >
+                    <img src={img} alt="" className="w-full h-full object-cover object-top" />
+                  </button>
+                ))}
+              </div>
+            )}
+
+            <div className="mt-3 text-center text-[#F8F6F2]">
               <p className="font-editorial text-xl sm:text-2xl tracking-wide">{product.name}</p>
               <p className="text-xs uppercase tracking-[0.25em] text-[#C6A576] mt-1 font-semibold">{product.fabric}</p>
             </div>

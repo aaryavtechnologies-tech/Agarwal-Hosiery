@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
-import { Eye, Sparkles, Filter, X, Phone, MessageSquare } from 'lucide-react';
+import { Eye, Sparkles, Filter, X, Phone, MessageSquare, Copy, ChevronLeft, ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/fashionData';
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [galleryImageIndex, setGalleryImageIndex] = useState(0);
+
+  const openPhotoModal = (item) => {
+    setSelectedPhoto(item);
+    setGalleryImageIndex(0);
+  };
 
   const galleryItems = [
     {
@@ -564,6 +570,22 @@ export default function GalleryPage() {
       image: '/images/womens-collection/peacock-teal-shaded-bandhani-flared-kurta-set.jpg',
       aspect: 'col-span-1 md:col-span-4 row-span-2',
       caption: 'Peacock teal and lime shaded tie-dye bandhani flared kurta with gold neckline embroidery, matching straight pants, and geometric border dupatta.'
+    },
+    {
+      id: 68,
+      title: "Royal Mustard Zari Silk Kurta Set with Kalamkari Pashmina Shawl",
+      category: 'festive',
+      categoryLabel: "Festive Ensembles",
+      image: '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-01.jpg',
+      images: [
+        '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-01.jpg',
+        '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-02.jpg',
+        '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-03.jpg',
+        '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-04.jpg',
+        '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-05.jpg'
+      ],
+      aspect: 'col-span-1 md:col-span-8 row-span-2',
+      caption: 'Opulent mustard Chanderi silk straight kurta with V-neckline embroidery, crochet lace cuffs, matching cigarette pants, and a rich multi-color Kalamkari & Pashmina-print shawl.'
     }
   ];
 
@@ -626,7 +648,7 @@ export default function GalleryPage() {
           {filtered.map((item) => (
             <div
               key={item.id}
-              onClick={() => setSelectedPhoto(item)}
+              onClick={() => openPhotoModal(item)}
               className={`group relative overflow-hidden bg-[#151515] cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500 min-h-[380px] sm:min-h-[440px] flex flex-col justify-end ${item.aspect}`}
             >
               <img
@@ -638,13 +660,24 @@ export default function GalleryPage() {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent transition-opacity group-hover:opacity-90" />
 
-              <div className="absolute top-4 left-4 z-10">
+              <div className="absolute top-4 left-4 z-10 pointer-events-none">
                 <span className="px-3 py-1 bg-black/75 backdrop-blur-md text-[10px] font-semibold uppercase tracking-[0.2em] text-[#C6A576] border border-[#C6A576]/30">
                   {item.categoryLabel}
                 </span>
               </div>
 
-              <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* Multi-Image Lucide Copy Badge on Card */}
+              {item.images && item.images.length > 1 && (
+                <div
+                  className="absolute top-4 right-4 z-20 flex items-center gap-1.5 px-2.5 py-1 bg-black/80 backdrop-blur-md text-white text-[10px] font-semibold tracking-wider rounded-sm border border-[#C6A576]/50 shadow-md pointer-events-none"
+                  title="Multi-photo post (click to slide)"
+                >
+                  <Copy className="w-3.5 h-3.5 text-[#C6A576]" />
+                  <span>{item.images.length}</span>
+                </div>
+              )}
+
+              <div className={`absolute top-4 ${item.images && item.images.length > 1 ? 'right-16' : 'right-4'} z-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none`}>
                 <span className="w-9 h-9 rounded-full bg-[#C6A576] text-[#151515] flex items-center justify-center shadow-md">
                   <Eye className="w-4 h-4" />
                 </span>
@@ -663,10 +696,10 @@ export default function GalleryPage() {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Lightbox Modal with Multi-Image Sliding */}
       {selectedPhoto && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md p-4 sm:p-8 flex items-center justify-center animate-fade-up"
+          className="fixed inset-0 z-50 bg-black/92 backdrop-blur-md p-4 sm:p-8 flex items-center justify-center animate-fade-up"
           onClick={() => setSelectedPhoto(null)}
         >
           <div
@@ -675,17 +708,72 @@ export default function GalleryPage() {
           >
             <button
               onClick={() => setSelectedPhoto(null)}
-              className="absolute top-4 right-4 z-20 p-2 bg-black/60 hover:bg-[#C6A576] hover:text-[#151515] rounded-full transition-colors"
+              className="absolute top-4 right-4 z-30 p-2 bg-black/60 hover:bg-[#C6A576] hover:text-[#151515] rounded-full transition-colors shadow-lg"
+              aria-label="Close modal"
             >
               <X className="w-5 h-5" />
             </button>
 
-            <div className="w-full md:w-3/5 bg-black/95 flex items-center justify-center p-3 sm:p-5 min-h-[320px] md:min-h-[520px]">
+            {/* Left: Image Container with Multi-Image Slide Controls */}
+            <div className="relative w-full md:w-3/5 bg-black/95 flex flex-col items-center justify-center p-3 sm:p-5 min-h-[320px] md:min-h-[520px]">
+              {selectedPhoto.images && selectedPhoto.images.length > 1 && (
+                <div className="absolute top-4 left-4 z-20 flex items-center gap-1.5 px-3 py-1 bg-black/80 backdrop-blur-md text-white text-xs font-medium border border-[#C6A576]/50 shadow-md pointer-events-none">
+                  <Copy className="w-3.5 h-3.5 text-[#C6A576]" />
+                  <span>{galleryImageIndex + 1} / {selectedPhoto.images.length}</span>
+                </div>
+              )}
+
+              {/* Prev / Next Buttons */}
+              {selectedPhoto.images && selectedPhoto.images.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setGalleryImageIndex((prev) => (prev === 0 ? selectedPhoto.images.length - 1 : prev - 1));
+                    }}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/75 hover:bg-[#C6A576] hover:text-[#151515] text-white flex items-center justify-center transition-all shadow-xl border border-white/20 hover:scale-110"
+                    aria-label="Previous photo"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setGalleryImageIndex((prev) => (prev === selectedPhoto.images.length - 1 ? 0 : prev + 1));
+                    }}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/75 hover:bg-[#C6A576] hover:text-[#151515] text-white flex items-center justify-center transition-all shadow-xl border border-white/20 hover:scale-110"
+                    aria-label="Next photo"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                </>
+              )}
+
               <img
-                src={selectedPhoto.image}
+                src={(selectedPhoto.images && selectedPhoto.images[galleryImageIndex]) || selectedPhoto.image}
                 alt={selectedPhoto.title}
-                className="max-w-full max-h-[75vh] w-auto h-auto object-contain mx-auto"
+                className="max-w-full max-h-[65vh] md:max-h-[72vh] w-auto h-auto object-contain mx-auto transition-all duration-300"
               />
+
+              {/* Thumbnails row if multiple images */}
+              {selectedPhoto.images && selectedPhoto.images.length > 1 && (
+                <div className="flex items-center justify-center gap-2 mt-3 z-20 overflow-x-auto max-w-full py-1">
+                  {selectedPhoto.images.map((img, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      onClick={() => setGalleryImageIndex(idx)}
+                      className={`w-10 h-12 overflow-hidden rounded border-2 transition-all flex-shrink-0 ${
+                        galleryImageIndex === idx ? 'border-[#C6A576] scale-105 shadow-md' : 'border-white/20 opacity-60 hover:opacity-100'
+                      }`}
+                    >
+                      <img src={img} alt="" className="w-full h-full object-cover object-top" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="w-full md:w-2/5 p-6 sm:p-8 flex flex-col justify-between space-y-4">

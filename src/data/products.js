@@ -859,6 +859,39 @@ export const PRODUCTS = [
     ]
   },
   {
+    id: 'prod-w-34',
+    name: 'Royal Mustard Zari Embroidered Silk Kurta Set with Kalamkari Pashmina Shawl',
+    slug: 'royal-mustard-zari-embroidered-silk-kurta-set-kalamkari-shawl',
+    category: 'festive',
+    categoryLabel: 'Festive & Ethnic',
+    clothingType: 'kurta-sets',
+    clothingTypeLabel: 'Silk Kurta Pant Set',
+    targetGender: 'women',
+    price: 2699,
+    originalPrice: 3699,
+    badge: 'ROYAL EDITION',
+    isFeatured: true,
+    rating: 5.0,
+    inStock: true,
+    images: [
+      '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-01.jpg',
+      '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-02.jpg',
+      '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-03.jpg',
+      '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-04.jpg',
+      '/images/womens-collection/mustard-kalamkari-shawl-kurta-suit-05.jpg'
+    ],
+    sizes: ['M (Bust 38)', 'L (Bust 40)', 'XL (Bust 42)', 'XXL (Bust 44)'],
+    description: 'Opulent festive ensemble featuring a rich mustard yellow Chanderi silk straight kurta adorned with delicate floral butis and an intricately hand-embroidered V-neckline with stone and zari accents. Finished with artisanal crochet lace sleeve cuffs and hem, coordinated straight silk cigarette trousers, and a luxurious multi-color Kalamkari & Pashmina-style printed statement shawl/dupatta.',
+    fabric: 'Pure Chanderi Silk with Zari Embroidery & Pashmina-Touch Shawl',
+    details: [
+      'Deep V-neckline adorned with artisanal multi-color stone, bead, and gold zari embroidery',
+      'Intricate crochet cutout lace bordering the kurta hemline and 3/4th sleeve cuffs',
+      'Includes coordinated solid mustard cigarette trousers with comfort waistband',
+      'Magnificent multi-tone Kalamkari and Paisley heritage printed statement shawl',
+      'Care: Dry clean recommended to maintain zari work and silk sheen'
+    ]
+  },
+  {
     id: 'prod-m-05',
     name: 'Van Heusen Mustard, White & Navy Color-Block Polo T-Shirt',
     slug: 'van-heusen-mustard-white-navy-color-block-polo-tshirt',
