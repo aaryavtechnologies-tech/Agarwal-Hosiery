@@ -13,8 +13,11 @@ import { PRODUCTS } from '../data/products';
 export default function HomePage() {
   const [activeLookbookFilter, setActiveLookbookFilter] = useState('all');
 
-  // Featured 'Best Picks' products
-  const featuredProducts = PRODUCTS.filter((p) => p.isFeatured).slice(0, 4);
+  // Featured 'Best Picks' products: 4 diverse bestsellers across departments with zero homepage image overlap
+  const featuredIds = ['prod-w-30', 'prod-w-23', 'prod-m-06', 'prod-h-women-rumal'];
+  const featuredProducts = featuredIds
+    .map((id) => PRODUCTS.find((p) => p.id === id))
+    .filter(Boolean);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F8F6F2] text-[#151515] relative selection:bg-[#C6A576] selection:text-[#151515]">
